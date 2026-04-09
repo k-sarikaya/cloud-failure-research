@@ -1,0 +1,19 @@
+topo_type,n_nodes,seed,episodes,eval_scenarios,weights,policy_mode,method,sst_mean_h,sst_std_h
+ws,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+25% Backup,8.36,1.161
+ws,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+50% Backup,11.8,1.424
+ws,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,FC-DQN,0.553,0.025
+ws,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,GAT-SAC (Ours),13.593,3.038
+ws,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,Heuristic Pruning (Graceful Drain),5.88,0.935
+ws,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,No Defence,4.637,0.889
+er,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+25% Backup,8.453,1.359
+er,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+50% Backup,11.597,1.297
+er,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,FC-DQN,0.593,0.045
+er,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,GAT-SAC (Ours),13.593,3.038
+er,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,Heuristic Pruning (Graceful Drain),5.93,0.796
+er,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,No Defence,4.81,0.768
+5g_mec,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+25% Backup,8.063,1.466
+5g_mec,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+50% Backup,10.833,1.146
+5g_mec,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,FC-DQN,0.607,0.037
+5g_mec,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,GAT-SAC (Ours),12.867,1.426
+5g_mec,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,Heuristic Pruning (Graceful Drain),5.653,1.105
+5g_mec,100,42,500,5,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,No Defence,4.643,0.556

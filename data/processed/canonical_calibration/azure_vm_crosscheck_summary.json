@@ -1,0 +1,10 @@
+{
+  "cpu_shards": [
+    "D:\\Azure\\azurepublicdatasetv2_min\\vm_cpu_readings-file-1-of-195.csv.gz"
+  ],
+  "n_rows_processed": 10000000,
+  "n_bins": 20,
+  "burst_threshold_pct": 95.0,
+  "min_count_per_bin": 5000,
+  "notes": "This binned summary is intended for a telemetry cross-check panel: we examine how the probability of a burst-to-saturation event (max_cpu >= threshold) varies with average load (avg_cpu)."
+}

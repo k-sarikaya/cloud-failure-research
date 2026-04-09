@@ -1,0 +1,19 @@
+topo_type,n_nodes,seed,episodes,eval_scenarios,weights,policy_mode,method,sst_mean_h,sst_std_h
+ba,100,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+25% Backup,8.006,1.241
+ba,100,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+50% Backup,10.644,1.308
+ba,100,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,FC-DQN,0.561,0.035
+ba,100,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,GAT-SAC (Ours),11.556,1.694
+ba,100,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,Heuristic Pruning (Graceful Drain),6.144,0.995
+ba,100,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,No Defence,4.544,0.342
+ba,150,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+25% Backup,7.878,0.267
+ba,150,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+50% Backup,10.556,0.32
+ba,150,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,FC-DQN,0.861,0.042
+ba,150,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,GAT-SAC (Ours),13.261,0.952
+ba,150,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,Heuristic Pruning (Graceful Drain),5.433,0.887
+ba,150,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,No Defence,4.6,0.548
+ba,200,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+25% Backup,8.006,0.943
+ba,200,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,+50% Backup,11.244,0.976
+ba,200,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,FC-DQN,1.05,0.076
+ba,200,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,GAT-SAC (Ours),12.578,2.319
+ba,200,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,Heuristic Pruning (Graceful Drain),5.667,0.905
+ba,200,42,500,3,code\weights\gat_sac_v8_retrained_seed42.pt,fixed_trained_policy,No Defence,5.033,0.857

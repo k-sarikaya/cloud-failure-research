@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "num_scenarios": 40,
+  "n_nodes": 100,
+  "topo_type": "ba",
+  "ba_m": 3,
+  "max_steps": 1440,
+  "npz": "artifacts\\scenario_bank_ba_n100_k40_seed42.npz"
+}

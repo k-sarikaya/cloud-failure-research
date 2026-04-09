@@ -1,0 +1,29 @@
+CANONICAL CALIBRATION REPORT
+======================================================================
+Input table: C:\Users\Lenova\Desktop\Genetik Algoritma\cloud_failure_research\data\processed\processed_with_load_proxies.csv
+Output directory: C:\Users\Lenova\Desktop\Genetik Algoritma\cloud_failure_research\data\processed\canonical_calibration
+
+Inclusion rules:
+- required non-missing columns: severity_load, failure_rate_proxy, source
+- failure_rate_proxy > 0
+
+Rows retained: 334
+Sources: {'statuspage': 250, 'github': 50, 'atlassian': 34}
+Impacts: {'minor': 188, 'none': 77, 'major': 62, 'critical': 7}
+
+Primary fit:
+- alpha: 0.893780
+- lambda_0: 0.037965
+- R^2: 0.005512
+- p-value: 0.175858
+
+Bootstrap (row resampling):
+- n: 1000
+- alpha median: 0.851359
+- 95% CI: [-0.480232, 2.252674]
+- alpha std: 0.685874
+
+LOOCV by source:
+- hold out atlassian: alpha=-0.269849, R^2=0.000514, n=300
+- hold out github: alpha=0.794289, R^2=0.004378, n=284
+- hold out statuspage: alpha=3.614046, R^2=0.091695, n=84

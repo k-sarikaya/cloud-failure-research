@@ -1,0 +1,33 @@
+﻿[config] N=100 BA(m)=3 Na=50 dt=1.0min max_hours=8.0 lambda_base=0.08 alpha=0.9 gamma=0.85 demand_thresh=0.6
+[dqn] Training for 500 episodes ...
+[pre-fill] Collecting No-Op (Expert) demonstrations...
+[pre-fill] Added 21040 No-Op steps to Replay Buffer.
+[train] ep=   1/500 steps= 228 return=  1908.0 mean_loss= 4.59736 total_steps=228
+[train] ep=  25/500 steps= 178 return=  1338.0 mean_loss= 5.66635 total_steps=4315
+[train] ep=  50/500 steps= 167 return=  1362.0 mean_loss= 6.62580 total_steps=8163
+[train] ep=  75/500 steps= 164 return=  1289.0 mean_loss= 8.52979 total_steps=11781
+[train] ep= 100/500 steps= 184 return=  1464.0 mean_loss= 9.87720 total_steps=15666
+[train] ep= 125/500 steps= 162 return=  1302.0 mean_loss= 9.46244 total_steps=19097
+[train] ep= 150/500 steps= 183 return=  1508.0 mean_loss= 8.12097 total_steps=22819
+[train] ep= 175/500 steps= 148 return=  1128.0 mean_loss=13.05512 total_steps=26451
+[train] ep= 200/500 steps= 146 return=  1121.0 mean_loss=10.04242 total_steps=29796
+[train] ep= 225/500 steps= 122 return=   817.0 mean_loss=10.37986 total_steps=33392
+[train] ep= 250/500 steps= 219 return=  1829.0 mean_loss= 9.71977 total_steps=36941
+[train] ep= 275/500 steps= 145 return=  1045.0 mean_loss= 9.17962 total_steps=40557
+[train] ep= 300/500 steps= 169 return=  1374.0 mean_loss= 9.82071 total_steps=44079
+[train] ep= 325/500 steps= 135 return=  1025.0 mean_loss=11.35335 total_steps=47672
+[train] ep= 350/500 steps= 153 return=  1253.0 mean_loss= 9.82441 total_steps=51043
+[train] ep= 375/500 steps= 140 return=  1060.0 mean_loss=10.01471 total_steps=54602
+[train] ep= 400/500 steps= 112 return=   767.0 mean_loss=12.01757 total_steps=58168
+[train] ep= 425/500 steps= 144 return=  1084.0 mean_loss=11.42680 total_steps=61660
+[train] ep= 450/500 steps= 134 return=   984.0 mean_loss=11.54537 total_steps=65076
+[train] ep= 475/500 steps= 166 return=  1291.0 mean_loss=10.81487 total_steps=68595
+[train] ep= 500/500 steps= 160 return=  1320.0 mean_loss=11.70474 total_steps=71979
+[dqn] Saved weights: Version4_paper_repro\fc_dqn_weights.pt
+
+Method         Mean SST (h)  SST Std (h)  Proactive Loss (%)  Natural Loss (%)  Total Cap Loss (%)  Avg Natural Failures  Improvement vs No Defense (%)
+   No Defense 3.575         0.633         0.000              40.879            40.879              42.350                  0.000                       
+  +25% Backup 5.461         0.809         0.000              52.666            52.666              54.400                 52.751                       
+  +50% Backup 7.266         0.507         0.000              60.022            60.022              61.450                103.240                       
+    Heuristic 2.550         0.407        13.247              27.440            40.686              28.100                -28.671                       
+DQN Strategic 2.444         0.376        13.942              27.194            41.137              27.900                -31.632                       

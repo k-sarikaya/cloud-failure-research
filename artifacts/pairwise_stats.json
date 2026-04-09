@@ -1,0 +1,47 @@
+[
+  {
+    "base_method":"GAT-SAC (Ours)",
+    "compare_method":"+25% Backup",
+    "mean_delta_h":6.0995833333,
+    "wilcoxon_stat":0.0,
+    "p_value":0.0,
+    "paired_cohens_d":2.7452250242,
+    "holm_adjusted_p_value":0.0
+  },
+  {
+    "base_method":"GAT-SAC (Ours)",
+    "compare_method":"FC-DQN",
+    "mean_delta_h":13.4433333333,
+    "wilcoxon_stat":0.0,
+    "p_value":0.0,
+    "paired_cohens_d":5.5310897413,
+    "holm_adjusted_p_value":0.0
+  },
+  {
+    "base_method":"GAT-SAC (Ours)",
+    "compare_method":"Heuristic Pruning (Graceful Drain)",
+    "mean_delta_h":8.53875,
+    "wilcoxon_stat":0.0,
+    "p_value":0.0,
+    "paired_cohens_d":3.5259694562,
+    "holm_adjusted_p_value":0.0
+  },
+  {
+    "base_method":"GAT-SAC (Ours)",
+    "compare_method":"No Defence",
+    "mean_delta_h":9.53,
+    "wilcoxon_stat":0.0,
+    "p_value":0.0,
+    "paired_cohens_d":4.0942323625,
+    "holm_adjusted_p_value":0.0
+  },
+  {
+    "base_method":"GAT-SAC (Ours)",
+    "compare_method":"+50% Backup",
+    "mean_delta_h":3.2116666667,
+    "wilcoxon_stat":16.0,
+    "p_value":0.0000000003,
+    "paired_cohens_d":1.4141869575,
+    "holm_adjusted_p_value":0.0000000003
+  }
+]

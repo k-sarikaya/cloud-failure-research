@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this synchronized revision snapshot, please cite it as below."
+type: software
+title: "Dynamic Risk Mitigation in Edge Computing: A Queuing-Theoretic Framework for Reliability-Important Cascading Failure Prevention"
+abstract: >
+  A queue-motivated reliability-control framework integrating a proxy-informed
+  load-dependent hazard model with graph-aware continuous control (GAT-SAC) for
+  cascading-failure mitigation in edge computing networks. The synchronized revision
+  snapshot bundles the canonical BA-100 paired benchmark, fixed-policy hazard-slope
+  replay, topology-transfer probes, and illustrative OVHcloud replay artifacts.
+authors:
+  - family-names: "Sarikaya"
+    given-names: "Kadir"
+    email: "kadir.sarikaya@gop.edu.tr"
+    affiliation: "Tokat Gaziosmanpasa University, Department of Industrial Engineering"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/ksarikaya74/cloud-failure-research"
+url: "https://github.com/ksarikaya74/cloud-failure-research"
+license: MIT
+version: "2.0.0"
+date-released: "2026-04-01"
+keywords:
+  - reliability engineering
+  - cascading failures
+  - edge computing
+  - graph neural networks
+  - graph attention networks
+  - soft actor-critic
+  - continuous control
+  - network resilience
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Sarikaya"
+      given-names: "Kadir"
+  title: "Dynamic Risk Mitigation in Edge Computing: A Queuing-Theoretic Framework for Reliability-Important Cascading Failure Prevention"
+  journal: "Reliability Engineering and System Safety"
+  year: 2026
+  publisher:
+    name: "Elsevier"
+  doi: "10.1016/j.ress.2026.XXXXX"

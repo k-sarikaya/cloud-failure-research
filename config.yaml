@@ -1,0 +1,26 @@
+# Core Environment Setup
+n_nodes: 100
+dt_min: 1.0
+max_hours: 8.0
+
+# Utilization Parameters
+capacity_low: 50.0
+capacity_high: 500.0
+init_util_low: 0.40
+init_util_high: 0.70
+
+# Failure Physics (Exponential Hazard)
+lambda_base: 0.08
+alpha: 0.90
+gamma_redistribute: 0.85
+gamma_prune: 0.50
+
+# Safety Guardrails
+demand_threshold_frac: 0.60
+prune_util_min: 99.0      # Safety mask bypassed to enable pure RL policy mapping
+
+# PyTorch GNN-DQN Training
+episodes: 500
+batch_size: 128
+target_update: 200
+buffer_size: 500000

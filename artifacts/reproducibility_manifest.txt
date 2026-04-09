@@ -1,0 +1,25 @@
+Canonical BA-100 benchmark identifiers
+===================================
+
+Checkpoint
+- Path: code/weights/gat_sac_v8_retrained_seed42.pt
+- SHA256: 5634E06605127063ADDE04221CC9738A0CDED6262629DA1F92725950FB71D9D5
+
+Evaluation scenario bank
+- Path: artifacts/scenario_bank_ba_n100_k40_seed42.npz
+- SHA256: F37048C84A999BA42F9A88CF574E10B6E10F99D68531CB3936AEF07755379C77
+
+Canonical training configuration
+- Seed: 42
+- Episodes: 500
+- Environment tag: ba_n100
+- Archived trace: artifacts/training_log.csv
+- Checkpoint progression: artifacts/checkpoint_progression.csv
+- Intermediate checkpoints: code/weights/gat_sac_v8_retrained_seed42_ep100.pt through code/weights/gat_sac_v8_retrained_seed42_ep500.pt
+
+Canonical evaluation command (run from code/)
+python training/train_sac.py --eval-only --weights weights/gat_sac_v8_retrained_seed42.pt --scenario-bank ../artifacts/scenario_bank_ba_n100_k40_seed42.npz --eval-scenarios 40 --device cpu
+
+Notes
+- Fixed-policy topology/size transfer artifacts are supplementary-only scope checks and are not part of the main manuscript claim set.
+- To rerun training from scratch without mutating the archived package, first copy the package to a scratch directory, then run the same script with seed 42 / 500 episodes and evaluate the resulting weights against the frozen scenario bank above.

@@ -1,0 +1,59 @@
+{
+  "input_file": "C:\\Users\\Lenova\\Desktop\\Genetik Algoritma\\cloud_failure_research\\data\\processed\\processed_with_load_proxies.csv",
+  "dataset_rows": 334,
+  "sources": {
+    "statuspage": 250,
+    "github": 50,
+    "atlassian": 34
+  },
+  "impacts": {
+    "minor": 188,
+    "none": 77,
+    "major": 62,
+    "critical": 7
+  },
+  "model": "log(failure_rate_proxy) = log(lambda_0) + alpha * severity_load",
+  "seed": 42,
+  "primary_fit": {
+    "alpha": 0.8937795381179585,
+    "log_lambda_0": -3.2710920570735698,
+    "lambda_0": 0.03796494454241506,
+    "r_squared": 0.005511994313708593,
+    "p_value": 0.17585802254704588,
+    "std_err": 0.6588806605596002,
+    "n_rows": 334
+  },
+  "bootstrap": {
+    "n_bootstrap": 1000,
+    "alpha_median": 0.8513587176717141,
+    "alpha_ci_lower": -0.48023209570365355,
+    "alpha_ci_upper": 2.2526743213975924,
+    "alpha_std": 0.6858744330429788
+  },
+  "loocv": [
+    {
+      "held_out_source": "atlassian",
+      "alpha": -0.2698489196969952,
+      "lambda_0": 0.08360085979714911,
+      "r_squared": 0.0005141407269938607,
+      "p_value": 0.6956881544893734,
+      "n_rows": 300
+    },
+    {
+      "held_out_source": "github",
+      "alpha": 0.794288678639897,
+      "lambda_0": 0.03375822193111435,
+      "r_squared": 0.004378057399728501,
+      "p_value": 0.2664113767667597,
+      "n_rows": 284
+    },
+    {
+      "held_out_source": "statuspage",
+      "alpha": 3.614046031909999,
+      "lambda_0": 0.007878051569576305,
+      "r_squared": 0.09169543133587486,
+      "p_value": 0.005113545520239387,
+      "n_rows": 84
+    }
+  ]
+}

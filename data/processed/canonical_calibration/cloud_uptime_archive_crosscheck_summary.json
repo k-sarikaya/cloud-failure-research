@@ -1,0 +1,10 @@
+{
+  "inputs": [
+    "D:\\CloudUptimeArchive\\raw\\github-status_global-status_operator_reported.csv",
+    "D:\\CloudUptimeArchive\\raw\\Github_user_reported.csv",
+    "D:\\CloudUptimeArchive\\raw\\atlassian_statuspage_operator_reported.csv",
+    "D:\\CloudUptimeArchive\\raw\\discord_global-status_operator_reported.csv"
+  ],
+  "n_traces": 4,
+  "notes": "Cloud Uptime Archive is used here as an external outage-trace cross-check. These summaries are intended to support discussion of incident-frequency proxies and their high variance / burstiness characteristics."
+}

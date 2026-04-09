@@ -1,0 +1,48 @@
+{
+  "observed_context_used_for_mapping": {
+    "incident": "OVHcloud Strasbourg fire",
+    "incident_date": "2021-03-10",
+    "reported_peak_service_disruption": "3.6 million websites",
+    "reported_detection_delay_min": 7,
+    "reported_recovery_window": "services resumed by 2021-03-22"
+  },
+  "replay_assumptions": {
+    "graph_mapping": "4-cluster, 100-node campus graph representing SBG1-SBG4",
+    "cluster_sizes": {
+      "SBG1": 20,
+      "SBG2": 30,
+      "SBG3": 25,
+      "SBG4": 25
+    },
+    "exogenous_shock": "progressive SBG2 loss over first 90 minutes",
+    "detection_delay_min": 7,
+    "evaluation_horizon_min": 360,
+    "weights": "C:\\Users\\Lenova\\Desktop\\Cascading Failures Article\\submission_package_2026-03-29_gat_sac_ress_v2\\code\\weights\\gat_sac_v8_retrained_seed42.pt"
+  },
+  "summary": {
+    "GAT-SAC (Ours)": {
+      "remaining_capacity_6h_mean_pct": 54.37984241504538,
+      "remaining_capacity_6h_std_pct": 4.070718825999686,
+      "aupc_6h_mean": 3.8593813278565845,
+      "aupc_6h_std": 0.13313287974031152
+    },
+    "Heuristic Throttle (30%)": {
+      "remaining_capacity_6h_mean_pct": 40.50150443991323,
+      "remaining_capacity_6h_std_pct": 2.791830075814215,
+      "aupc_6h_mean": 3.335111004878621,
+      "aupc_6h_std": 0.1015776685988965
+    },
+    "No Defence": {
+      "remaining_capacity_6h_mean_pct": 32.52149543715401,
+      "remaining_capacity_6h_std_pct": 3.239123645639584,
+      "aupc_6h_mean": 3.1662549827302593,
+      "aupc_6h_std": 0.15351009553033348
+    }
+  },
+  "comparison_gat_vs_no_defence": {
+    "remaining_capacity_6h_abs_gain_pct_points": 21.858346977891372,
+    "remaining_capacity_6h_rel_gain_pct": 67.21199835392386,
+    "aupc_6h_abs_gain": 0.6931263451263252,
+    "aupc_6h_rel_gain_pct": 21.891046327817946
+  }
+}
