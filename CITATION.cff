@@ -13,7 +13,7 @@ authors:
     given-names: "Kadir"
     email: "kadir.sarikaya@gop.edu.tr"
     affiliation: "Tokat Gaziosmanpasa University, Department of Industrial Engineering"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
+    orcid: "https://orcid.org/0000-0001-9015-6209"
 repository-code: "https://github.com/ksarikaya74/cloud-failure-research"
 url: "https://github.com/ksarikaya74/cloud-failure-research"
 license: MIT
@@ -38,4 +38,4 @@ preferred-citation:
   year: 2026
   publisher:
     name: "Elsevier"
-  doi: "10.1016/j.ress.2026.XXXXX"
+  doi: "10.1016/j.ress.2026.113007"
